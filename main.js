@@ -1,91 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 4</title>
-
-
-    <style>
-        .container {
-            align-items: center;
-            text-align: center;
-        }
-        .image {
-            padding-top: 40px;
-        }
-        .sec1{
-            background-color: yellow;
-            border: 1px solid black;
-            padding: 20px 20px;
-            margin-bottom: 25px;
-        }
-        .sec2{
-            background-color: rgb(245, 148, 255);
-            border: 3px solid black;
-            padding: 20px 20px;
-        }
-        #mail {
-            background-color: aqua;
-            box-sizing: border-box;
-            border: 1px solid black;
-            padding: 50px 50px;
-        }
-    </style>
+<style>
+#abc{background:lightblue;text-align:center;}
+#xyz{text-align:center;}
+#def{
+		background-color:grey;
+		width:400px;
+		border:70px solid green;
+		padding:70px;
+		margin:auto;}
+</style>
 </head>
-
 <body>
-    <section class="container">
-        <div class="sec1">
-            <div class="name">
-                <p id="name">Click here to display name: </p>
-                <button onclick=nme()>Show Name</button>
-            </div>
-            <div class="registration number">
-                <p id="roll">Click here to display registration number: </p>
-                <button onclick=reg()>Show Registration number</button>
-            </div>
-        </div>
-        <div class="sec2">
-            <div class="image" id="image">
-                <img src="gigi.jpg" alt="Gigi" width="300px" height="200px"
-                    onmouseover="large(this)" onmouseout="norm(this)">
-            </div>
-            <div id="pname">
-                <p font-size="30px" id="pname" onmouseover="plarge(this)" onmouseout="pnorm(this)">Gigi</p>
-            </div>
-        </div>
-        <div class="mail">
-            <p id="mail">gangotri.bhattacharjee01@gmail.com</p>
-        </div>
-    </section>
+	<div id ="abc">
+		<h2>Name:Gangotri Bhattacharjee</h2>
+		<h2>My Registration no:</h2>
+		<p>Select your semester</p>
+		<select name ="semester">
+			<option value = "1st">1st</option>
+			<option value = "2nd">2nd</option>
+			<option value = "3rd">3rd</option>
+			<option value ="4th">4th</option>
+			<option value ="5th">5th</option>
+			<option value ="6th">6th</option><br>
+		</select>
+	</div>
 
-    <script>
-        function nme() {
-            alert("Gangotri Bhattacharjee");
-        }
-
-        function reg() {
-            alert("202000007");
-        }
-
-        function large(x) {
-            x.style.height = "300px";
-            x.style.width = "450px";
-        }
-
-        function norm(x) {
-            x.style.height = "200px";
-            x.style.width = "300px";
-        }
-        function plarge(x) {
-            x.style.fontSize = "40px"
-        }
-        function pnorm(x) {
-            x.style.fontSize = "20px"
-        }
-    </script>
+	<div id ="xyz">
+		<image src ="gigi.jpg" width = "300" height="300"<br>
+		<h3>Gigi Hadid</h3>
+	</div>
+	
+	<div id ="def">
+		<h2>Email-id: gangotri_202000007@smit.smu.edu.in
+	</div>
 </body>
 </html>
